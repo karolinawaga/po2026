@@ -1,8 +1,9 @@
-package agh.po.lab2;
+//package agh.po.lab2;
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Lotto {
+    //zadanie1
     public static void main(String[] args) {
         ArrayList<Integer> wylosowane = new ArrayList<>();
         Random random = new Random();
@@ -15,7 +16,22 @@ public class Lotto {
 
             }
         }
-        System.out.print("wylosowane liczby: " + wylosowane + " ");
+        //zadanie 2
+        ArrayList<Integer> moje = new ArrayList<>();
+        for (String arg : args){
+            moje.add(Integer.parseInt(arg));
+        }
+        int traf=0;
+        for(int liczba : moje){
+            if(wylosowane.contains(liczba)){
+                traf++;
+            }
+        }
+
+
+        System.out.println("moje " + moje);
+        System.out.println("wylosowane liczby: " + wylosowane + " ");
+        System.out.println("trafienia: " + traf);
         }
 
     }
