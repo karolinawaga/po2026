@@ -23,4 +23,20 @@ public class CodingBatTest {
         assertEquals(true, cb.makes10(10,1));
 
     }
+    @Test
+    public void only14() {
+        CodingBat cb = new CodingBat();
+        assertEquals(false, cb.only14(new int[]{1, 4, 2, 4}));
+        assertEquals(true, cb.only14(new int[]{1, 4, 4}));
+        assertEquals(true, cb.only14(new int[]{1, 1}));
+
+    }
+    @Test
+    public void seeColor() {
+        CodingBat cb = new CodingBat();
+        assertEquals("red", cb.seeColor("redfg"));
+        assertEquals("blue", cb.seeColor("blueee"));
+        assertEquals("", cb.seeColor("df"));
+
+    }
 }
