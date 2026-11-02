@@ -1,3 +1,5 @@
+package agh.po.lab3.src;
+
 public class CodingBat {
     public static void main(String[] args) {
         CodingBat cb = new CodingBat();
@@ -19,6 +21,8 @@ public class CodingBat {
     public boolean makes10(int a, int b) {
         return (a == 10 || b == 10 || a+b == 10);
     }
+
+
 
 
 }
