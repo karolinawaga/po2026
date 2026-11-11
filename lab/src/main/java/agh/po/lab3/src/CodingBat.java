@@ -2,15 +2,15 @@ package agh.po.lab3.src;
 
 public class CodingBat {
     public static void main(String[] args) {
-        CodingBat cb = new CodingBat();
-        System.out.println(cb.close10(9,9));
+        CodingBat cb = new CodingBat(); //obiekt
+        System.out.println(cb.close10(9,9)); //odpowiedz mnetod
         System.out.println(cb.makes10(2,8));
         System.out.println(cb.only14(new int[]{1, 1, 7}));
         System.out.println(cb.seeColor("redblue"));
 
     }
     public int close10(int a, int b) {
-        int aa = Math.abs(10-a);
+        int aa = Math.abs(10-a); //odleglosc liczby od 10
         int bb = Math.abs(10-b);
         if(aa < bb){
             return a;
@@ -22,9 +22,9 @@ public class CodingBat {
     }
     public boolean makes10(int a, int b) {
         return (a == 10 || b == 10 || a+b == 10);
-    }
+    } //spr czy a lub b = 10 lub a=b=10
 
-    public boolean only14(int[] nums) {
+    public boolean only14(int[] nums) { //spr tablice liczb moze tylko zwierac 1,4
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != 1 && nums[i] != 4) {
                 return false;
@@ -33,7 +33,7 @@ public class CodingBat {
         return true;
     }
 
-    public String seeColor(String str) {
+    public String seeColor(String str) { //czy zaczyna sie od red lub blue
         if (str.startsWith("red")) {
             return "red";
         }

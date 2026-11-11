@@ -9,8 +9,8 @@ public class CodingBatTest {
 
     @Test
     public void close10() {
-        CodingBat cb = new CodingBat();
-        assertEquals(8, cb.close10(8,13));
+        CodingBat cb = new CodingBat(); //tworzymy obiekt aby uruchomic metode
+        assertEquals(8, cb.close10(8,13)); //przypadki
         assertEquals(0, cb.close10(9,9));
         assertEquals(7, cb.close10(1,7));
 
