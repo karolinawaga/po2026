@@ -7,7 +7,7 @@ public class Dog extends Animal {
 
     @Override
     public String getDescription() {
-        return "Pies " + name + "liczba nog " + legs;
+        return "Pies " + name + "l.nog " + legs;
     }
     @Override
     public void makeSound() {

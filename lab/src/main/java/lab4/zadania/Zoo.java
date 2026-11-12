@@ -10,8 +10,8 @@ import java.util.Random;
 public class Zoo {
     public static void main(String[] args) {
         //tab na 100
-        Animal[] animals = new Animal[100];
-        Random random = new Random();
+        Animal[] animals = new Animal[100];//mozemy miec 3 typy w 1 tab
+        Random random = new Random();//obiekt do losowania
 
         //tap pomocnicz do los typu zwierz
         String[] typy = {"Dog", "Parrot", "Snake"};

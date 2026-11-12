@@ -1,15 +1,15 @@
 package lab4.animals;
 
-public class Snake extends Animal {
+public class Snake extends Animal {//dziedziczy przejmuje wszystkie pola i metody z animal
     public Snake(String name) {
-        super(name, 0);
+        super(name, 0);//wywolanie konstruktora
     }
 
-    @Override
+    @Override //nadpisuje metode, zdeklarowana w klasie animal
     public String getDescription() {
-        return "Waz " + name + "  liczba nóg " + legs;
+        return "waz " + name + "  l. nog " + legs;
     }
-    @Override
+    @Override//nastepna metoda
     public void makeSound() {
         System.out.println(name + " ssssss");
     }

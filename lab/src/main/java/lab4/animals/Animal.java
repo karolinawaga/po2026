@@ -1,7 +1,7 @@
 package lab4.animals;
 
 public abstract class Animal {
-        protected String name;
+        protected String name; //(protected)pole widoczne w kazdej klasie
         protected int legs;
 
         // konstruktor
